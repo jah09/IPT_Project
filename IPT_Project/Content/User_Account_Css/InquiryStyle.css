@@ -1,0 +1,243 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/03/44/7b/03447be73c5b73a3f66b411eaf05ff67.jpg');
+}
+
+/*txtbx field style*/
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: black; /* color of font when typing the textbox field*/
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+
+.txtbxfn {
+    border-color: #5cb85c;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    color: black;
+    box-shadow: none;
+    font-weight: 900;
+    border-width: 1px;
+    /* padding: 6px 12px; */
+    margin-top:20px;
+}
+
+    .txtbxfn:focus {
+        border-color: #5cb85c;
+    }
+
+
+/*null*/
+.txtbxln {
+    border-color: #5cb85c;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: -1px;
+    margin-bottom: 15px;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    color: black;
+    box-shadow: none;
+    font-weight: 900;
+    border-width: 1px;
+}
+
+    /*null*/
+    .txtbxln:focus {
+        border-color: #5cb85c
+    }
+
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+.form-control, .btn {
+    border-radius: 5px;
+}
+
+
+/*form style*/
+.signup-form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+    /*header style*/
+    .signup-form h2 {
+        color: black;
+        text-decoration: underline;
+       margin-top:-20px;
+        position: relative;
+        text-align: center;
+    }
+
+        .signup-form h2:before, .signup-form h2:after {
+            content: "";
+            font-color: black;
+            background: black;
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+        }
+
+        .signup-form h2:before {
+            left: 5;
+        }
+
+        .signup-form h2:after {
+            right: 0;
+        }
+
+
+    /*null*/
+    /*create your account now*/
+    .signup-form .hint-txt {
+        color: white;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: courier new;
+        font-size: 15px;
+    }
+
+    /* whole form style */
+    .signup-form form {
+        color: black;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right:0px;
+        margin-top: 20px;
+        background: gray;
+        box-shadow: 40px 20px 40px rgba(10, 10, 10, 0.3);
+        padding: 50px;
+        font-family: courier new;
+        opacity: 0.75;
+        background-color: #3A4928;
+        height: 600px;
+    }
+
+    /*null*/
+    /*contact txtbx style*/
+    .signup-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    /*null*/
+    /*checkbox style*/
+    .signup-form input[type="checkbox"] {
+        margin-top: 3px;
+        font-family: Arial;
+        color: red;
+    }
+
+    /*button style*/
+    .signup-form .btn {
+        font-size: 20px;
+        /* font size of register button font-weight: bold; */
+        width: 200px;
+        outline: none !important;
+        font-family: courier new;
+        border-radius: 20px;
+        margin-left: 60px;
+        margin-top:200px;
+    }
+
+    /* null*/
+    .signup-form .row div:first-child {
+        padding-right: 50px;
+        font-family: courier new;
+    }
+
+    /*padding for txtbxfn*/
+    .signup-form .row div:last-child {
+        padding-left: 10px;
+        font-family: courier new;
+    }
+
+    /* null*/
+    .signup-form a {
+        text-decoration: underline;
+        font-family: courier new;
+        color: red;
+    }
+
+        /* null*/
+        .signup-form a:hover {
+            text-decoration: underline;
+        }
+
+    .signup-form form a {
+        color: black;
+        //font color of "I accept the Terms blah blah"...
+    }
+
+.contact {
+    width: 400px;
+    margin-left: 0px
+}
+
+
+.checkbox-inline {
+    color: white;
+    margin-left: 30px;
+}
+
+
+
+
+.search{
+ 
+   margin-top:-5000px;
+   margin-left:90px;
+   color:gray;
+   padding:5px;
+   border-radius:15px;
+   width:100px;
+}
+
+    .search:hover {
+        background-color: #3A4928;
+        
+    }
+   
+
+table {
+    font-family:  Courier New, Courier, monospace;
+    border-collapse: collapse;
+    width: 500px;
+
+    
+}
+
+td, th {
+    border: 2px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:none;
+}
+
+.title{
+    background-color:black;
+    color:white;
+}
+
+.tbl {
+    margin-left: 80px;
+    color: white;
+}
