@@ -174,6 +174,67 @@ namespace IPT_Project.Controllers
             return View();
         }
 
+        public ActionResult Cash_Out()
+        {
+            var data = new List<object>();
+            var mess = 0;
+
+
+            var owner_name = Request["Ownername"];
+            var cardnum = Request["Cardnumber"];
+            var amount = Request["Amount"];
+            var phonenumber = Request["contact_number"];
+
+
+
+
+           /* try
+            {
+                using (var db = new SqlConnection(walletConn))
+                {
+                    db.Open();
+                    using (var cmd = db.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = "INSERT INTO CASHIN_TBL(CI_OWNERNAME,CI_CARDNUMBER,CI_AMOUNT,CI_CONTACTNUM)"
+                                        + " VALUES ("
+                                        + " @ownername, "
+                                        + " @cardnum, "
+                                        + " @amount, "
+
+                                        + " @contactnum) ";
+                        cmd.Parameters.AddWithValue("@ownername", owner_name);
+                        cmd.Parameters.AddWithValue("@cardnum", cardnum);
+                        cmd.Parameters.AddWithValue("@amount", amount);
+
+                        cmd.Parameters.AddWithValue("@contactnum", phonenumber);
+                        var ctr = cmd.ExecuteNonQuery();
+                        if (ctr >= 1)
+                        {
+                            mess = 1;
+
+                        }
+                        //data.Add(new
+                        // {
+                        //    mess = mess
+                        //});
+                        db.Close();
+
+
+                    }
+                }
+            }*/
+          //  catch (Exception ex)
+            //{
+
+           // }
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+
+
+
+        }
+
 
         public ActionResult Inquiry()
         {

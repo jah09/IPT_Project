@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\downloaded_css\w3.css" />
     <Content Include="Content\User_Account_Css\CashInStyle.css" />
+    <Content Include="Content\User_Account_Css\CashOutStyle.css" />
     <Content Include="Content\User_Account_Css\InquiryStyle.css" />
     <Content Include="Content\User_Account_Css\UserAccountStyle.css" />
     <Content Include="favicon.ico" />
@@ -157,6 +158,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\MyScript\Cashin.js" />
+    <Content Include="Scripts\MyScript\Cashout.js" />
     <Content Include="Scripts\MyScript\CreateAccount.js" />
     <Content Include="Scripts\script\jquery-3.6.0.js" />
     <Content Include="Scripts\script\jquery-3.6.0.min.js" />
