@@ -39,6 +39,8 @@ namespace IPT_Project.Controllers
 
         }
 
+
+        /* USER REGISTRATION/ CREATE ACCOUNT CODES - TO INSERT DATA IN DATABASE --- START HERE*/
         public ActionResult CreateAccount()
 
         {
@@ -100,7 +102,7 @@ namespace IPT_Project.Controllers
             }
 
             return Json(data, JsonRequestBehavior.AllowGet);
-        }
+        } /* END HERE*/
 
 
         public ActionResult CashIn()
@@ -108,7 +110,8 @@ namespace IPT_Project.Controllers
             return View();
 
         }
-        
+
+        /* CASH IN CODES - TO INSERT DATA IN DATABASE --- START HERE*/
         public ActionResult Cash_In()
         {
 
@@ -166,14 +169,15 @@ namespace IPT_Project.Controllers
             }
 
             return Json(data, JsonRequestBehavior.AllowGet);
-        } 
+        } /* END HERE*/ 
 
-
+        
         public ActionResult CashOut()
         {
             return View();
         }
 
+        /* CASH OUT CODES - TO INSERT DATA IN DATABASE --- START HERE*/
         public ActionResult Cash_Out()
         {
             var data = new List<object>();
@@ -188,7 +192,7 @@ namespace IPT_Project.Controllers
 
 
 
-           /* try
+           try
             {
                 using (var db = new SqlConnection(walletConn))
                 {
@@ -196,12 +200,11 @@ namespace IPT_Project.Controllers
                     using (var cmd = db.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "INSERT INTO CASHIN_TBL(CI_OWNERNAME,CI_CARDNUMBER,CI_AMOUNT,CI_CONTACTNUM)"
+                        cmd.CommandText = "INSERT INTO CASHOUT_TBL(CO_OWNERNAME,CO_CARDNUMBER,CO_AMOUNT,CO_CONTACTNUM)"
                                         + " VALUES ("
                                         + " @ownername, "
                                         + " @cardnum, "
                                         + " @amount, "
-
                                         + " @contactnum) ";
                         cmd.Parameters.AddWithValue("@ownername", owner_name);
                         cmd.Parameters.AddWithValue("@cardnum", cardnum);
@@ -223,17 +226,17 @@ namespace IPT_Project.Controllers
 
                     }
                 }
-            }*/
-          //  catch (Exception ex)
-            //{
+            }
+            catch (Exception ex)
+            {
 
-           // }
+            }
 
             return Json(data, JsonRequestBehavior.AllowGet);
 
 
 
-        }
+        } /* END HERE*/
 
 
         public ActionResult Inquiry()
