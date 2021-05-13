@@ -160,6 +160,7 @@
     <Content Include="Scripts\MyScript\Cashin.js" />
     <Content Include="Scripts\MyScript\Cashout.js" />
     <Content Include="Scripts\MyScript\CreateAccount.js" />
+    <Content Include="Scripts\MyScript\InquiryPage.js" />
     <Content Include="Scripts\script\jquery-3.6.0.js" />
     <Content Include="Scripts\script\jquery-3.6.0.min.js" />
     <Content Include="Web.config" />
@@ -180,6 +181,7 @@
     <Content Include="Views\Home\CashIn.cshtml" />
     <Content Include="Views\Home\CashOut.cshtml" />
     <Content Include="Views\Home\Inquiry.cshtml" />
+    <Content Include="Views\Home\MoneyTransfer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

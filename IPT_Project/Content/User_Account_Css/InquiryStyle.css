@@ -19,7 +19,7 @@ body {
     border-color: #5cb85c;
     border-radius: 5px;
     width: 400px;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 15px;
     height: 45px;
     outline: none;
@@ -35,7 +35,7 @@ body {
     .txtbxfn:focus {
         border-color: #5cb85c;
     }
-
+  
 
 /*null*/
 .txtbxln {
@@ -70,9 +70,9 @@ body {
 
 /*form style*/
 .signup-form {
-    width: 700px;
+    width: 650px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0px;
 }
 
     /*header style*/
@@ -200,8 +200,8 @@ body {
 
 .search{
  
-   margin-top:-5000px;
-   margin-left:90px;
+   margin-top:-600px;
+   margin-left:120px;
    color:gray;
    padding:5px;
    border-radius:15px;
@@ -210,9 +210,13 @@ body {
 
     .search:hover {
         background-color: #3A4928;
-        
+        color:white;
     }
    
+    .srch{
+         margin-left:100px;
+         margin-top:-10px;
+    }
 
 table {
     font-family:  Courier New, Courier, monospace;
@@ -238,6 +242,22 @@ tr:nth-child(even) {
 }
 
 .tbl {
-    margin-left: 80px;
+    margin-left: 30px;
     color: white;
+    margin-top:60px;
+}
+
+
+
+.selector {
+    color: black;
+    margin-left: 320px;
+    margin-top:-70px;
+  
+}
+
+.dropdown{
+    width:50px;
+    outline: 1px solid darkgreen;
+
 }

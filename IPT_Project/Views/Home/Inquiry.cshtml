@@ -6,7 +6,8 @@
 <html>
 <head>
     <link href="~/Content/User_Account_Css/InquiryStyle.css" rel="stylesheet" />
-
+    <script src="~/Scripts/script/jquery-3.6.0.js"></script>
+    <script src="~/Scripts/script/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -15,13 +16,31 @@
             <h2><b>Inquiry Page</b></h2>
             <p class="hint-txt">Enter the name you want to search below!</p>
 
-            <div class="form-group">
+            <div class="form-group"> 
 
                 <div class="row">
-                    <div class="col-xs-6"><input type="text" id="txtbx_search" class="txtbxfn" placeholder="Search...." required="required"></div>
+                    <div class="col-xs-6">
+                        <input type="text" id="txtbx_search" class="txtbxfn" placeholder="Search...." required="required">
+                        <div class="selector">
+                            <label for="cars"></label>
+                            <select class="dropdown" id="dropdwn">
+                                <option value="volvo"></option>
+                                <option value="Cash-in">Cash In</option>
+                                <option value="Cash-out">Cash Out</option>
+                                <option value="Money Transfer">Money Transfer</option>
+                                <option value="Accounts">Accounts</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                   
+
                     </br>
                     </br>
-                    <button type="submit" id="btncreate" class="search"><b>Search</b></button>
+                    <div class="srch">
+                        <button type="submit" id="btn_Search" class="search"><b>Search</b></button>
+                    </div>
                 </div>
           
             </div>
@@ -70,9 +89,6 @@
                     <td>null</td>
                     <td>null</td>
                 </tr>
-
-                
-
             </table>
 
 
@@ -91,7 +107,7 @@
 
 
 </body>
-
+<script src="~/Scripts/MyScript/InquiryPage.js"></script>
 
 </html>
 

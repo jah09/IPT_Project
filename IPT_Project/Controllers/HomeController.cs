@@ -245,5 +245,64 @@ namespace IPT_Project.Controllers
         }
 
 
+        public ActionResult Inquiry_page()
+        {
+
+            var data = new List<object>();
+            var mess = 0;
+
+
+            var search = Request["Searchbtn"];
+            var dropdown= Request["Dropdown"];
+
+            try
+            {
+                using (var db = new SqlConnection(walletConn))
+                {
+                    db.Open();
+                    using (var cmd = db.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = "INSERT INTO INQUIRYPAGE_TBL(IP_SEARCH,IP_DROPDOWNLIST)"
+                                        + " VALUES ("
+                                        + " @searchbx, "
+                                        
+                                        + " @dropdownlist) ";
+                        cmd.Parameters.AddWithValue("@searchbx", search);
+                        cmd.Parameters.AddWithValue("@dropdownlist", dropdown);
+                    
+                        var ctr = cmd.ExecuteNonQuery();
+                        if (ctr >= 1)
+                        {
+                            mess = 1;
+
+                        }
+                        //data.Add(new
+                        // {
+                        //    mess = mess
+                        //});
+                        db.Close();
+
+
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+
+
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+
+        }
+
+        public ActionResult MoneyTransfer()
+        {
+            return View();
+        }
+
     }
 }
