@@ -139,6 +139,7 @@
     <Content Include="Content\User_Account_Css\CashInStyle.css" />
     <Content Include="Content\User_Account_Css\CashOutStyle.css" />
     <Content Include="Content\User_Account_Css\InquiryStyle.css" />
+    <Content Include="Content\User_Account_Css\MoneyTransferStyle.css" />
     <Content Include="Content\User_Account_Css\UserAccountStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -161,6 +162,7 @@
     <Content Include="Scripts\MyScript\Cashout.js" />
     <Content Include="Scripts\MyScript\CreateAccount.js" />
     <Content Include="Scripts\MyScript\InquiryPage.js" />
+    <Content Include="Scripts\MyScript\MoneyTransfer.js" />
     <Content Include="Scripts\script\jquery-3.6.0.js" />
     <Content Include="Scripts\script\jquery-3.6.0.min.js" />
     <Content Include="Web.config" />

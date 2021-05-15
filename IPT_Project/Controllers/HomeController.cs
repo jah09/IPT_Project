@@ -304,5 +304,68 @@ namespace IPT_Project.Controllers
             return View();
         }
 
+        public ActionResult Money_Transfer()
+        {
+
+            var data = new List<object>();
+            var mess = 0;
+
+
+            var Sender_Name = Request["Sendername"];
+            var Sender_Contact_Num = Request["Sendercontactnumber"];
+            var Sender_Amount = Request["Senderamount"];
+            var Receiver_Name = Request["Receivername"];
+            var Receiver_Contactnumber = Request["Receivercontactnumber"];
+
+            try
+            {
+                using (var db = new SqlConnection(walletConn))
+                {
+                    db.Open();
+                    using (var cmd = db.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = "INSERT INTO MONEYTRANSFER_TBL(MT_SENDERNAME,MT_SENDERCONTACTNUM,MT_SENDERAMOUNT,MT_RECEIVERNAME,MT_RECEIVERCONTACTNUM)"
+                                        + " VALUES ("
+                                        + " @sendername, "
+                                         + " @sendercontactnum, "
+                                          + " @senderamount, "
+                                           + " @receivername, "
+                                        + " @receivercontactnum) ";
+                        cmd.Parameters.AddWithValue("@sendername", Sender_Name);
+                        cmd.Parameters.AddWithValue("@sendercontactnum", Sender_Contact_Num);
+                        cmd.Parameters.AddWithValue("@senderamount", Sender_Amount);
+                        cmd.Parameters.AddWithValue("@receivername", Receiver_Name);
+                        cmd.Parameters.AddWithValue("@receivercontactnum", Receiver_Contactnumber);
+
+                        var ctr = cmd.ExecuteNonQuery();
+                        if (ctr >= 1)
+                        {
+                            mess = 1;
+
+                        }
+                        //data.Add(new
+                        // {
+                        //    mess = mess
+                        //});
+                        db.Close();
+
+
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+
+
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+
+
+        }
+
     }
 }

@@ -54,6 +54,38 @@ body {
         border-color: #5cb85c
     }
 
+.txtbxamount {
+    border-color: #5cb85c;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    color: black;
+    box-shadow: none;
+    font-weight: 900;
+    border-width: 1px;
+    margin-left:15px;
+}
+
+.txtbxcontactnumber {
+    border-color: #5cb85c;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    color:black;
+    box-shadow: none;
+    font-weight: 900;
+    border-width: 1px;
+    margin-left: 15px;
+    margin-top:0px;
+}
 
 .form-control:focus {
     border-color: #5cb85c;
@@ -124,7 +156,7 @@ body {
 
     /*contact txtbx style*/
     .signup-form .form-group {
-        margin-bottom: 20px;
+        margin-bottom: -10px;
     }
 
     /*checkbox style*/
@@ -143,6 +175,7 @@ body {
         font-family: courier new;
         border-radius: 20px;
         margin-left: 60px;
+        margin-top:30px;
     }
 
     /* null*/
@@ -197,4 +230,8 @@ body {
 
 .header_cashin {
     font-family: Courier New, Courier, monospace;
+}
+
+::placeholder{
+    padding-left:5px;
 }

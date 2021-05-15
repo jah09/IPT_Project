@@ -1,0 +1,165 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/03/44/7b/03447be73c5b73a3f66b411eaf05ff67.jpg');
+}
+
+
+
+
+.signup-form {
+    width: 50px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+ 
+
+    /* whole form style */
+    .signup-form form {
+        color: black;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        margin-left: -250px;
+        margin-right: 0px;
+        margin-top: 20px;
+        background: gray;
+        box-shadow: 40px 20px 40px rgba(10, 10, 10, 0.3);
+        padding: 50px;
+        font-family: courier new;
+        opacity: 0.75;
+        background-color: #3A4928;
+        height: 750px;
+        width: 550px;
+    }
+
+.header_cashin {
+    font-family: Courier New, Courier, monospace;
+    text-align:center;
+    text-decoration:underline;
+    margin-top: 0px;
+}
+
+.signup-form .hint-txt {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: courier new;
+    font-size: 15px;
+}
+
+
+    .firstrow{
+
+        height:600px;
+    }
+
+.senderinfo
+{
+    border-style: solid;
+    border-color:black;
+    border-width:3px;
+    border-radius:15px;
+    padding:5px;
+    color:white;
+    margin-left:-30px;
+}
+
+.txtbxsenderinfo_name {
+    color:black;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
+    border-radius:10px;
+    outline: none;
+    font-size:15px;
+
+}
+
+.txtbxsenderinfo_contactnumber {
+    color: black;
+    margin-left: -125px;
+    margin-top: 40px;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.txtbxsenderinfo_amount {
+    color: black;
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+
+
+.secondrow{
+   
+    width:600px;
+    margin-top:130px;
+    margin-left:-30px;
+}
+
+
+.receiverinfo {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    
+
+  
+}
+
+.txtbxreceiverinfo_contactnumber {
+    color: black;
+    margin-left: -125px;
+    margin-top: 70px;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+/*button style*/
+.signup-form .btn {
+    font-size: 20px;
+    /* font size of register button font-weight: bold; */
+    width: 200px;
+    outline: none !important;
+    font-family: courier new;
+    border-radius: 20px;
+    margin-left: 140px;
+    margin-top:120px;
+}
+
+/*checkbox style*/
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
+    font-family: Arial;
+    color: red;
+}
+
+.checkbox-inline {
+    color: white;
+    margin-left: 30px;
+}
+
+::placeholder{
+
+    padding-left:5px;
+}
